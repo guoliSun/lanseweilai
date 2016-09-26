@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" restorationIdentifier="selfCenter_cell" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" rowHeight="73" id="KGk-i7-Jjw" customClass="SelfCenterTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="72"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="287" height="71"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="头像" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Xr-Dj-cHH">
+                        <rect key="frame" x="15" y="25" width="41" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="41" id="E2X-TT-raL"/>
+                            <constraint firstAttribute="height" constant="21" id="eAP-Xy-yKh"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <color key="textColor" red="0.60000002379999995" green="0.60000002379999995" blue="0.60000002379999995" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="touxiang.png" translatesAutoresizingMaskIntoConstraints="NO" id="jBW-dv-AOa">
+                        <rect key="frame" x="206" y="0.0" width="71" height="71"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="50" id="L23-s6-sKi"/>
+                            <constraint firstAttribute="width" constant="71" id="W0k-jQ-7rY"/>
+                            <constraint firstAttribute="width" constant="50" id="hEl-nQ-wcv"/>
+                            <constraint firstAttribute="height" constant="71" id="z1L-X8-dxs"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="L23-s6-sKi"/>
+                                <exclude reference="hEl-nQ-wcv"/>
+                            </mask>
+                        </variation>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="jBW-dv-AOa" secondAttribute="trailing" constant="10" id="9ns-T7-JWf"/>
+                    <constraint firstItem="1Xr-Dj-cHH" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="IrC-zs-md8"/>
+                    <constraint firstItem="jBW-dv-AOa" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" constant="1.5" id="t1F-Vf-LFI"/>
+                    <constraint firstItem="1Xr-Dj-cHH" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="ule-hJ-Yel"/>
+                    <constraint firstAttribute="trailing" secondItem="jBW-dv-AOa" secondAttribute="trailing" constant="5" id="xF1-Ml-Z6A"/>
+                    <constraint firstItem="jBW-dv-AOa" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="zSN-pF-Wgb"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="t1F-Vf-LFI"/>
+                        <exclude reference="xF1-Ml-Z6A"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="rightLabel" destination="gXx-PZ-wsU" id="IcF-7b-G1c"/>
+                <outlet property="titleLabel" destination="g2O-ea-iqO" id="ctV-8a-W0L"/>
+                <outlet property="userImage" destination="jBW-dv-AOa" id="c9h-Iv-VaS"/>
+            </connections>
+            <point key="canvasLocation" x="276" y="232"/>
+        </tableViewCell>
+        <tableViewCell contentMode="scaleToFill" restorationIdentifier="selfCenter_cell" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="g2O-ea-iqO" detailTextLabel="gXx-PZ-wsU" rowHeight="51" style="IBUITableViewCellStyleValue1" id="jFG-Gx-MZN" customClass="SelfCenterTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="jFG-Gx-MZN" id="xm4-xM-7tE">
+                <rect key="frame" x="0.0" y="0.0" width="287" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="g2O-ea-iqO">
+                        <rect key="frame" x="15" y="12" width="32" height="20"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <color key="textColor" red="0.60000002379999995" green="0.60000002379999995" blue="0.60000002379999995" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Detail" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="gXx-PZ-wsU">
+                        <rect key="frame" x="243" y="12" width="42" height="20"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <color key="textColor" red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </tableViewCellContentView>
+            <point key="canvasLocation" x="276" y="340"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="touxiang.png" width="146" height="146"/>
+    </resources>
+</document>

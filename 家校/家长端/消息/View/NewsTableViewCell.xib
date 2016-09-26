@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" restorationIdentifier="news_cell" selectionStyle="default" indentationWidth="10" rowHeight="85" id="KGk-i7-Jjw" customClass="NewsTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="85"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="84"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="touxiang.png" translatesAutoresizingMaskIntoConstraints="NO" id="o6K-iI-jUI">
+                        <rect key="frame" x="15" y="14" width="60" height="60"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="60" id="60g-lR-DAm"/>
+                            <constraint firstAttribute="width" constant="60" id="fL4-Cn-yeZ"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="消息内容消息内容消息内容消息内容息内容息内容" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wrf-Gd-YFk">
+                        <rect key="frame" x="90" y="50" width="216" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="xK8-MT-ajc"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.50196081400000003" green="0.50196081400000003" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="19:30" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yZg-TM-wDl">
+                        <rect key="frame" x="193" y="18" width="118" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="118" id="MRT-kj-9bc"/>
+                            <constraint firstAttribute="height" constant="21" id="STL-we-DgZ"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.50196081400000003" green="0.50196081400000003" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="王大锤-老师" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LlZ-B1-CY1">
+                        <rect key="frame" x="88" y="18" width="157" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="X55-Jh-iBO"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <color key="textColor" red="0.50196081400000003" green="0.50196081400000003" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sm4-wM-uDo">
+                        <rect key="frame" x="10" y="83" width="300" height="1"/>
+                        <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="qbK-eC-1Kd"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="wrf-Gd-YFk" firstAttribute="top" secondItem="yZg-TM-wDl" secondAttribute="bottom" constant="11" id="3O8-jw-IMY"/>
+                    <constraint firstAttribute="trailing" secondItem="wrf-Gd-YFk" secondAttribute="trailing" constant="14" id="APe-mG-EFP"/>
+                    <constraint firstItem="LlZ-B1-CY1" firstAttribute="leading" secondItem="o6K-iI-jUI" secondAttribute="trailing" constant="13" id="Az6-hj-XH7"/>
+                    <constraint firstItem="wrf-Gd-YFk" firstAttribute="leading" secondItem="o6K-iI-jUI" secondAttribute="trailing" constant="15" id="Bka-HJ-6h6"/>
+                    <constraint firstItem="yZg-TM-wDl" firstAttribute="leading" secondItem="LlZ-B1-CY1" secondAttribute="trailing" constant="-52" id="Kmh-hD-vWU"/>
+                    <constraint firstItem="LlZ-B1-CY1" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="18" id="OgS-B1-zEV"/>
+                    <constraint firstItem="o6K-iI-jUI" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" constant="2" id="e2d-YH-ZHR"/>
+                    <constraint firstItem="yZg-TM-wDl" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="18" id="eBd-IS-Q2S"/>
+                    <constraint firstItem="sm4-wM-uDo" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="ftX-g7-lMe"/>
+                    <constraint firstAttribute="trailing" secondItem="yZg-TM-wDl" secondAttribute="trailing" constant="9" id="iAG-Bp-I1S"/>
+                    <constraint firstItem="wrf-Gd-YFk" firstAttribute="top" secondItem="sm4-wM-uDo" secondAttribute="bottom" constant="-34" id="ppc-rQ-iUZ"/>
+                    <constraint firstItem="o6K-iI-jUI" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="r3E-aR-FDb"/>
+                    <constraint firstAttribute="trailing" secondItem="sm4-wM-uDo" secondAttribute="trailing" constant="10" id="s1f-AP-z7a"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="infoLabel" destination="wrf-Gd-YFk" id="wqD-qs-IJF"/>
+                <outlet property="nameLabel" destination="LlZ-B1-CY1" id="cPs-9s-lCW"/>
+                <outlet property="timeLabel" destination="yZg-TM-wDl" id="gRY-at-XrP"/>
+            </connections>
+            <point key="canvasLocation" x="297" y="325.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="touxiang.png" width="146" height="146"/>
+    </resources>
+</document>

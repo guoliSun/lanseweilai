@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="UpdateOldPhoneViewController">
+            <connections>
+                <outlet property="nextBtn" destination="f6G-TQ-595" id="Pg2-rv-5Cj"/>
+                <outlet property="phoneTextFiled" destination="k35-X4-coD" id="jmy-Mn-wd4"/>
+                <outlet property="view" destination="iN0-l3-epB" id="XCL-IH-bCU"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gdh-GT-KGu">
+                    <rect key="frame" x="0.0" y="64" width="375" height="60"/>
+                    <subviews>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="输入登录密码" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="k35-X4-coD">
+                            <rect key="frame" x="40" y="10" width="295" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="X10-3m-QVF"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="60" id="LSa-ub-SpX"/>
+                        <constraint firstAttribute="trailing" secondItem="k35-X4-coD" secondAttribute="trailing" constant="40" id="LjI-fM-vE8"/>
+                        <constraint firstAttribute="bottom" secondItem="k35-X4-coD" secondAttribute="bottom" constant="10" id="LpD-4E-WrZ"/>
+                        <constraint firstItem="k35-X4-coD" firstAttribute="top" secondItem="Gdh-GT-KGu" secondAttribute="top" constant="10" id="fPR-cZ-fw9"/>
+                        <constraint firstItem="k35-X4-coD" firstAttribute="leading" secondItem="Gdh-GT-KGu" secondAttribute="leading" constant="40" id="yn4-ja-vcg"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f6G-TQ-595">
+                    <rect key="frame" x="40" y="154" width="295" height="40"/>
+                    <color key="backgroundColor" red="0.0" green="0.70588235290000001" blue="0.94509803920000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="6by-75-f30"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                    <state key="normal" title="下一步">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="nextAct:" destination="-1" eventType="touchUpInside" id="qLt-G8-JAn"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.94117647058823528" green="0.94117647058823528" blue="0.94117647058823528" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="f6G-TQ-595" firstAttribute="top" secondItem="Gdh-GT-KGu" secondAttribute="bottom" constant="30" id="1RE-dh-8pO"/>
+                <constraint firstItem="f6G-TQ-595" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="40" id="AwD-o8-Lx0"/>
+                <constraint firstItem="Gdh-GT-KGu" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="DGv-fc-b5t"/>
+                <constraint firstAttribute="trailing" secondItem="f6G-TQ-595" secondAttribute="trailing" constant="40" id="Ek8-DG-280"/>
+                <constraint firstItem="Gdh-GT-KGu" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="64" id="Jj1-3L-pBh"/>
+                <constraint firstItem="f6G-TQ-595" firstAttribute="top" secondItem="Gdh-GT-KGu" secondAttribute="bottom" constant="30" id="iqw-JJ-Ax8"/>
+                <constraint firstAttribute="trailing" secondItem="Gdh-GT-KGu" secondAttribute="trailing" id="lKZ-x2-yMy"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+        </view>
+    </objects>
+</document>

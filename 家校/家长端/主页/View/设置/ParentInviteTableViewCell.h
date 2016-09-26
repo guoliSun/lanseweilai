@@ -1,0 +1,17 @@
+//
+//  ParentInviteTableViewCell.h
+//  HomeSchool
+//
+//  Created by Ba by on 16/8/23.
+//  Copyright © 2016年 com.cosinnet. All rights reserved.
+//
+
+#import <UIKit/UIKit.h>
+
+@interface ParentInviteTableViewCell : UITableViewCell
+@property (weak, nonatomic) IBOutlet UILabel *nameLabel;
+@property (weak, nonatomic) IBOutlet UILabel *relationLabel;
+@property (weak, nonatomic) IBOutlet UILabel *connectLabel;
+
+@property (weak, nonatomic) IBOutlet UILabel *phoneLabel;
+@end
